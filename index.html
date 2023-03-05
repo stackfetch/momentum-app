@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Finish</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="greeting">
+      <form class="greeting-login hidden" id="login-form">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="What is your name?"
+        />
+        <input type="submit" value="⇢" />
+      </form>
+      <h1 class="hidden" id="greeting"></h1>
+      <div class="greeting-info">
+        <h2 id="clock">00:00:00</h2>
+        <div id="weather">
+          <div class="weather-contents"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="todos">
+      <form id="todo-form">
+        <input
+          type="text"
+          placeholder="Write a To Do and Press Enter"
+          required
+        />
+      </form>
+      <ul id="todo-list"></ul>
+    </div>
+
+    <script src="js/clock.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/todos.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/background.js"></script>
+  </body>
+</html>
